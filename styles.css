@@ -61,11 +61,23 @@ background:#E2E8F0;
 }
 
 
-.overview-hero-text{
+.learn-about h2{
 	
-	
-	
+font-size:24px;
+color:	#48BB78;
 	
 }
 
 
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);	
+}
+
+
+.card{
+	
+grid-column:auto;	
+padding:10px;	
+	
+}

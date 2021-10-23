@@ -18,20 +18,33 @@ body {
 
 img{
 	
-	width:150px;
-	height:150px;
+	/* styles for all images*/
 	
+	width:150px;
+	height:150px;	
 	
 }
 
+
+header .container{
+	
+	/*flexbox for header elements*/
+	display:flex;
+	
+}
 
 
 h1{
 	
+/*style for h1 in header*/	
 font-size:18px;
-ali	
+text-align:left;
+align-self:center;
+
+
 }
 
+/*styling for nav bar elements in header*/	
 
 ul{
 	
@@ -47,37 +60,132 @@ li{
 list-style-type:None;
 padding:5px; 
 font-size:18px;
+color:#6b7280;
+	
+}
+
+
+li:hover{
+	
+	
+color:#5A67D8;	
 	
 }
 
 
 
+
+
+
+
+/*Hero section:Live your healthiest life now*/
+
 .overview-hero .container{
 	
-display:flex;	
-flex:row;
+display:grid;	
+grid-template-columns:repeat(3,1fr);
 background:#E2E8F0;
 
 }
 
+.overview-hero-text{
+	
+grid-column:2/4;	
+	
+}
+
+.overview-hero-text>p{
+	
+padding-right:20px;	
+	
+}
+
+.overview-hero-image{
+	
+grid-column:1;	
+
+	
+}
+
+.overview-hero-image>img{
+	
+	width:300px
+	
+}
+
+
+
+
+/*learn-about cards section*/
 
 .learn-about h2{
 	
 font-size:24px;
 color:	#48BB78;
+
 	
 }
 
 
 .cards{
 display:grid;
-grid-template-columns:repeat(3,1fr);	
+grid-template-columns:repeat(3,1fr);
+
 }
 
 
 .card{
 	
 grid-column:auto;	
-padding:10px;	
+left-padding:20px;	
+border-style:solid;
+border-radius: 5px;
+border-color: #E2E8F0;	
+justify-content:space-evenly;
+box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+
+}
+
+
+
+
+
+
+/*Covid 19 testing section*/
+
+.cta{
+
+display:flex;	
+flex-direction:row;
+justify-content:flex-end;
+	
+	
+}
+
+.cta .btn{
+	
+background-color:#48BB78;	
+border: rounded 5px;	
+	
+}
+
+.testing .container{
+	
+background-color:#4A5568;	
+	
+}
+
+
+.testing-desciption>h2{
+	
+	color:white;
+	
+}
+
+.testing-desciption>p{
+	
+	color:white;
+	text-align:left;
+	padding:50px;
 	
 }

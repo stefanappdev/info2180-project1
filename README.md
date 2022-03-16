@@ -1,5 +1,5 @@
-# info2180-project1
-repository for info2180-project1
+
+repository for medical_website_sample
 
 
-This is Project 1 for Stefan Mitchell
+This is sample Project done by Stefan Mitchell
